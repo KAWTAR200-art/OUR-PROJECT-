@@ -1,0 +1,232 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #171738, #392b70, #7854a8);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(23, 23, 56, 0.95);
+    border-bottom: 2px solid #ffe66d;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffe66d;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe66d;
+}
+
+
+/* Buttons */
+button {
+    background: #ffe66d;
+    color: #242454;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px 5px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffcc45;
+    transform: scale(1.05);
+}
+
+
+/* Main Content */
+main {
+    padding: 40px 15px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffe66d;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #e0dafa;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* Score and Lives */
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Game Area */
+#game {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin: 0 auto;
+    background: linear-gradient(#242454, #34346a);
+    border: 3px solid #ffe66d;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(255, 230, 109, 0.2);
+}
+
+
+/* Player */
+#player {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    font-size: 38px;
+    transform: translateX(-50%);
+    user-select: none;
+}
+
+
+/* Star */
+.star {
+    position: absolute;
+    font-size: 28px;
+}
+
+
+/* Enemy */
+.enemy {
+    position: absolute;
+    font-size: 30px;
+}
+
+
+/* Game Buttons */
+.game-buttons {
+    margin-top: 10px;
+}
+
+
+/* Game Message */
+#message {
+    margin: 15px 0;
+    font-size: 18px;
+    min-height: 25px;
+    color: #ffe66d;
+}
+
+
+/* Instructions */
+.controls {
+    margin-top: 20px;
+    line-height: 2;
+    color: #e0dafa;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 30px 15px 15px;
+    background: rgba(23, 23, 56, 0.95);
+    border-top: 2px solid #ffe66d;
+}
+
+footer h2 {
+    color: #ffe66d;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 12px 0;
+    color: #e0dafa;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffe66d;
+}
+
+.copyright {
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #game {
+        height: 320px;
+    }
+
+    .game-info {
+        gap: 20px;
+        font-size: 17px;
+    }
+}
+```

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kawakz World</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home">
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            🌍 Kawakz World
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#game">Play Game</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button onclick="startGame()">
+            🎮 Play Now
+        </button>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <h1>Welcome to Kawakz World! 🌟</h1>
+
+        <p class="description">
+            Explore your world, collect stars, and avoid monsters!
+            <br>
+            Are you ready for the challenge?
+        </p>
+
+
+        <!-- Score and Lives -->
+        <div class="game-info">
+
+            <span>
+                ⭐ Score:
+                <span id="score">0</span>
+            </span>
+
+            <span>
+                ❤️ Lives:
+                <span id="lives">3</span>
+            </span>
+
+        </div>
+
+
+        <!-- Game Area -->
+        <div id="game">
+
+            <div id="player">🧙‍♀️</div>
+
+            <div id="star" class="star">⭐</div>
+
+            <div id="enemy" class="enemy">👾</div>
+
+        </div>
+
+
+        <!-- Game Buttons -->
+        <div class="game-buttons">
+
+            <button onclick="startGame()">
+                ▶ Start Game
+            </button>
+
+            <button onclick="restartGame()">
+                🔄 Restart
+            </button>
+
+        </div>
+
+
+        <!-- Game Message -->
+        <div id="message">
+            Press Start Game to begin!
+        </div>
+
+
+        <!-- Instructions -->
+        <div class="controls">
+
+            🎮 Use the arrow keys to move your character.
+            <br>
+
+            ⭐ Collect stars to earn points.
+            <br>
+
+            👾 Avoid the monster!
+            <br>
+
+            🏆 Reach 100 points to win!
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="about">
+
+        <h2>🌍 Kawakz World</h2>
+
+        <p>
+            A little world full of adventure, stars, and fun!
+        </p>
+
+        <div class="social-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#game">Play Game</a>
+
+            <a href="#about">About Us</a>
+
+        </div>
+
+        <p class="copyright">
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
